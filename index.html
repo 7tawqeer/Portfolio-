@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tawqeer | Portfolio</title>
+    <meta name="description" content="Portfolio of Tawqeer, a BCA student, specializing in C, Python, and Linux environments.">
+    <link rel="canonical" href="https://yourcustomdomain.com/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Personal logo.svg">
+</head>
+
+<body>
+
+    <!-- ── Navigation (desktop links + hamburger) ── -->
+    <nav class="glass">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+
+        <!-- Hamburger button, only visible on mobile -->
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile dropdown menu (separate from the floating nav pill) -->
+    <div class="nav-mobile-menu glass" id="mobileMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </div>
+
+    <main>
+
+        <!-- ══════════════════════════════════
+             HOME / HERO SECTION
+             ══════════════════════════════════ -->
+        <section id="home">
+            <div class="glass home-box" style="padding: 60px; text-align: center; border-radius: 30px; width: 100%;">
+
+                <!-- Profile photo with spinning ring -->
+                <div class="profile-ring-container">
+                    <img src="Picture.jpg" alt="Portrait of Tawqeer">
+                </div>
+
+
+                <!-- Name heading -->
+                <h1>Hi, I'm <span class="accent-text">Tawqeer</span></h1>
+
+                <!-- Typewriter animated subtitle -->
+                <div class="typewriter-wrap">
+                    <span id="typed-text"></span><span class="typewriter-cursor">|</span>
+                </div>
+
+                <!-- NEW: Quick-info badge pills -->
+                <div class="hero-badges">
+                    <span class="hero-badge"><span class="dot-green"></span> Open to Collaborate</span>
+                    <span class="hero-badge"><i class="fas fa-graduation-cap"></i> BCA 2nd Semester</span>
+                    <span class="hero-badge"><i class="fas fa-map-marker-alt"></i> Kashmir, India</span>
+                    <span class="hero-badge"><i class="fas fa-shield-alt"></i> Future Cybersecurity</span>
+                </div>
+
+                <!-- Two CTA buttons (View Work + Contact) -->
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-live" style="flex: none; padding: 12px 32px;">
+                        <i class="fas fa-rocket" style="margin-right:7px;"></i>View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-github" style="flex: none; padding: 12px 32px;">
+                        <i class="fas fa-paper-plane" style="margin-right:7px;"></i>Get In Touch
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════
+             ABOUT SECTION
+             ══════════════════════════════════ -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content glass">
+                <p>I am a 2nd-semester Bachelor of Computer Applications (BCA) student at Government Degree College
+                    Pulwama, affiliated with the University of Kashmir. My academic journey is grounded in a deep
+                    curiosity for how both hardware and software interact.</p>
+
+                <p>I have a foundation in C programming, Python, HTML, and CSS, and I enjoy building practical projects
+                    to improve my skills. I frequently use AI tools as part of my development workflow, leveraging them
+                    to accelerate learning, generate project structures, and then customizing and enhancing the
+                    solutions through my own understanding and experimentation.</p>
+
+                <p>Beyond software development, I am also familiar with Android rooting, Magisk, custom ROM
+                    installation, bootloader unlocking.</p>
+
+                <p>Looking ahead, I dedicate significant time to self-learning, web development, and staying up to date
+                    with emerging technologies. I am continuously working to expand my skills and build real-world
+                    projects, with a long-term interest in cybersecurity.</p>
+
+                <!-- Quick stat numbers row -->
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="stat-number">2nd</span>
+                        <span class="stat-label">Semester</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Curiosity</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════
+             SKILLS SECTION
+             ══════════════════════════════════ -->
+        <section id="skills">
+            <h2>Technical Arsenal</h2>
+            <div class="grid">
+
+                <div class="card glass">
+                    <h3 class="accent-text">Programming &amp; Web</h3>
+                    <p>
+                        • C Programming<br>
+                        • Python (Basics)<br>
+                        • HTML5 &amp; CSS3<br>
+                    </p>
+                    <!-- Tech tag chips -->
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                    </div>
+                </div>
+
+                <div class="card glass">
+                    <h3 class="accent-text">Tools &amp; Development</h3>
+                    <p>
+                        • Git &amp; GitHub<br>
+                        • AI-Assisted Development<br>
+                        • VS Code<br>
+                        • Netlify Deployment<br>
+                    </p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Netlify</span>
+                    </div>
+                </div>
+
+                <div class="card glass">
+                    <h3 class="accent-text">Systems &amp; Mobile</h3>
+                    <p>
+                        • Linux (Kali &amp; Ubuntu)<br>
+                        • Android Rooting (Magisk)<br>
+                        • Custom ROM Flashing<br>
+                        • Bootloader Unlocking<br>
+                    </p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Kali</span>
+                        <span class="skill-tag">Magisk</span>
+                        <span class="skill-tag">Android</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════
+             PROJECTS SECTION
+             ══════════════════════════════════ -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="grid">
+
+                <!-- Project 1 -->
+                <div class="card glass">
+                    <h3 class="accent-text">Study Nest</h3>
+                    <p>A comprehensive academic hub built to support fellow BCA students. It organizes the entire
+                        6-semester curriculum, providing easy access to official syllabi, curated video tutorials, and
+                        my own handmade study notes.</p>
+                    <div class="btn-group">
+                        <a href="[YOUR_LIVE_LINK]" target="_blank" class="btn btn-live">Live Server</a>
+                        <a href="[YOUR_GITHUB_LINK]" target="_blank" class="btn btn-github">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card glass">
+                    <h3 class="accent-text">Attendance Registry</h3>
+                    <p>A workflow optimization tool built to digitize a chaotic, manual 42 student classroom tracking
+                        process. Features a clean interface with persistent daily logs via Chrome LocalStorage,
+                        real time attendance percentage analytics, and a one click clipboard export designed
+                        specifically to streamline the CR's reporting pipeline.</p>
+                    <div class="btn-group">
+                        <a href="https://attendanceregistry.netlify.app/" target="_blank" class="btn btn-live">Live
+                            Demo</a>
+                        <a href="https://github.com/7tawqeer/Attendance-Register" target="_blank"
+                            class="btn btn-github">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════
+             CONTACT SECTION
+             ══════════════════════════════════ -->
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="glass" style="padding: 40px 30px; border-radius: 20px; width: 100%;">
+                <p>Have a project, idea, or just want to connect? Feel free to reach out, I'm always excited to learn
+                    and collaborate.</p>
+                <div class="btn-group" style="justify-content: flex-start; max-width: 600px; margin-top: 20px;">
+                    <a href="mailto:[YOUR_EMAIL]" class="btn btn-email">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                    <a href="[YOUR_LINKEDIN]" target="_blank" class="btn btn-linkedin">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="[YOUR_GITHUB_PROFILE]" target="_blank" class="btn btn-github-brand">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="signature-container">
+                <div>
+                    <span class="sig-prompt">Portfolio </span>
+                    <span class="signature">Tawqeer</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
